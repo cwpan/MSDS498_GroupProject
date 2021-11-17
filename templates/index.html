@@ -16,6 +16,7 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post" style="z-index: 10">
+	    <input type="text" name="Label" placeholder="Label" required="required" /><br>
     	<input type="text" name="PAY_AMT1" placeholder="Payment Amount" required="required" /><br>
         <input type="text" name="BILL_AMT1" placeholder="Billing Amount" required="required" /><br>
         <input type="text" name="LIMIT_BAL" placeholder="LIMIT_BALANCE" required="required" /><br>
