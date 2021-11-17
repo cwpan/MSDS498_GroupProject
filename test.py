@@ -16,8 +16,9 @@ def predict():
     '''
     fl_features = [float(x) for x in request.form.values()]
     fltdata = [np.array(fl_features)]
+    strdata=','
     for data1 in fltdata:
-       strdata=','.join(data1)
+       strdata +=data1
     return strdata
     payload="{\"data\":strdata}"
     url = "https://6l6l7n7vtb.execute-api.us-east-2.amazonaws.com/test/predict"
