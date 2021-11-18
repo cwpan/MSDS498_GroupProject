@@ -20,7 +20,7 @@ def predict():
     strdata=','.join(fl_features)
     dictdata={"data":strdata}
     jsondata=json.dumps(dictdata)
-    payload=josn.loads(jsondata)
+    payload=json.loads(jsondata)
     #payload="{\"data\":\"\+strdata\+\"}"
     url = "https://6l6l7n7vtb.execute-api.us-east-2.amazonaws.com/test/predict"
 
