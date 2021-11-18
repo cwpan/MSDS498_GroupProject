@@ -27,7 +27,7 @@ def predict():
     response = requests.request("POST", url, headers=headers, data=payload)
     name = str(response.text)
     #return render_template('index.html', prediction_text=name)
-    return render_template('index.html', prediction_text=strdata)
+    return render_template('index.html', prediction_text=payload)
 	
 if __name__ == "__main__":
     app.debug = True
