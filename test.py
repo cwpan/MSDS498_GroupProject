@@ -1,6 +1,5 @@
 import numpy as np
 from flask import Flask, jsonify, request, render_template
-from array import *
 import json
 
 app = Flask(__name__)
@@ -16,8 +15,8 @@ def predict():
     '''
     For rendering results on HTML page
     '''
-    fl_features = [str(x) for x in request.form.values()]
-    strdata=','.join(fl_features)
+    fm_features = [str(x) for x in request.form.values()]
+    strdata=','.join(fm_features)
     dictdata={"data":strdata}
     jsondata=json.dumps(dictdata)
     payload=json.loads(jsondata)
