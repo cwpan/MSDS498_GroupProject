@@ -1,6 +1,7 @@
 import numpy as np
 from flask import Flask, jsonify, request, render_template
 from array import *
+import json
 
 app = Flask(__name__)
 
