@@ -19,7 +19,7 @@ def predict():
     strdata=','.join(fl_features)
     #fltdata = [np.array(fl_features)]
     #listdata=(fltdata)
-    payload="{\"data\":strdata}"
+    payload={\"data\":strdata}
     url = "https://6l6l7n7vtb.execute-api.us-east-2.amazonaws.com/test/predict"
 
     #payload="{\"data\":\"0,-0.34147611300851444,0.18202662446267728,310000.0,2.0,2.0,1.0,44.0,-1.0,-1.0,-2.0,-2.0,-2.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0\"}"
