@@ -1,5 +1,6 @@
 import numpy as np
 from flask import Flask, jsonify, request, render_template
+from array import *
 
 app = Flask(__name__)
 
@@ -16,7 +17,7 @@ def predict():
     '''
     fl_features = [float(x) for x in request.form.values()]
     fltdata = [np.array(fl_features)]
-    strdata=str(fltdata)
+    strdata=str(fltdata).tolist()
     payload="{\"data\":strdata}"
     url = "https://6l6l7n7vtb.execute-api.us-east-2.amazonaws.com/test/predict"
 
