@@ -27,10 +27,10 @@ def predict():
     #payload="{\"data\":\"0,-0.34147611300851444,0.18202662446267728,310000.0,2.0,2.0,1.0,44.0,-1.0,-1.0,-2.0,-2.0,-2.0,-2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0\"}"
     headers = {'Content-Type': 'application/json'}
 
-    #response = requests.request("POST", url, headers=headers, data=payload)
-    #name = str(response.text)
-    #return render_template('index.html', prediction_text=name)
-    return render_template('index.html', prediction_text=payload)
+    response = requests.request("POST", url, headers=headers, data=payload)
+    name = str(response.text)
+    return render_template('index.html', prediction_text=name)
+    #return render_template('index.html', prediction_text=payload)
 	
 if __name__ == "__main__":
     app.debug = True
