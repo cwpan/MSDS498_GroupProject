@@ -16,8 +16,9 @@ def predict():
     For rendering results on HTML page
     '''
     fl_features = [str(x) for x in request.form.values()]
-    fltdata = [np.array(fl_features)]
-    listdata=(fltdata)
+    strdata=','.join(fl_features)
+    #fltdata = [np.array(fl_features)]
+    #listdata=(fltdata)
     payload="{\"data\":strdata}"
     url = "https://6l6l7n7vtb.execute-api.us-east-2.amazonaws.com/test/predict"
 
@@ -27,7 +28,7 @@ def predict():
     #response = requests.request("POST", url, headers=headers, data=payload)
     #name = str(response.text)
     #return render_template('index.html', prediction_text=name)
-    return render_template('index.html', prediction_text=fl_features)
+    return render_template('index.html', prediction_text=strdata)
 	
 if __name__ == "__main__":
     app.debug = True
