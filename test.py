@@ -27,6 +27,7 @@ def predict():
     name = str(response.text)
     #return render_template('index.html', prediction_text=name)
     return render_template('index.html', prediction_text=strdata)
+	
 if __name__ == "__main__":
     app.debug = True
     app.run(host='0.0.0.0', port='8080')
