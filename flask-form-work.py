@@ -55,17 +55,15 @@ def form_predict():
             <title> Prediction </title>
             <link rel="stylesheet" href="static/css/style.css">
             </head> 
-            <h1 class="center3">The education is: {}</h1>
-            <h1 class="center3">The age is : {}</h1>
-            <h1 class="center3">Percent default : {}</h1>'''.format(education, age, name)
-            
+            <h1>The education is: {}</h1>
+            <h1>The age is : {}</h1>
+            <h1>Percent default : {}</h1>'''.format(education, age, name)
 #'Label,PAY_AMT1,BILL_AMT1,LIMIT_BAL,SEX,EDUCATION,MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6'
     #Handle the GET request and create the input form
-    return '''<form method="POST" class="center3">
-                <link rel="stylesheet" href="static/css/style.css">
-                <h2 class="center3">Please select </h2>
+    return '''<form method="POST">
+                <h2>Please select </h2>
                 <div><label>Level of Education: <input type="text" name="education"></label></div>
-                <div><label">Age: <input type="text" name="age"></label></div>
+                <div><label>Age: <input type="text" name="age"></label></div>
                 <input type="submit" value="Submit">
             </form>'''
 
