@@ -48,6 +48,13 @@ def form_predict():
 
 
         return '''
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UFT-8">
+            <title> Prediction </title>
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+            </head> 
             <h1>The education is: {}</h1>
             <h1>The age is : {}</h1>
             <h1>Percent default : {}</h1>'''.format(education, age, name)
