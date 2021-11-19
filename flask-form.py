@@ -61,9 +61,9 @@ def form_predict():
             
 #'Label,PAY_AMT1,BILL_AMT1,LIMIT_BAL,SEX,EDUCATION,MARRIAGE,AGE,PAY_0,PAY_2,PAY_3,PAY_4,PAY_5,PAY_6,BILL_AMT2,BILL_AMT3,BILL_AMT4,BILL_AMT5,BILL_AMT6,PAY_AMT2,PAY_AMT3,PAY_AMT4,PAY_AMT5,PAY_AMT6'
     #Handle the GET request and create the input form
-    return '''<form method="POST" class="center3">
+    return '''<form method="POST" class="center2">
                 <link rel="stylesheet" href="static/css/style.css">
-                <h2 class="center3">Please select </h2>
+                <h2">Please select </h2>
                 <div><label>Level of Education: <input type="text" name="education"></label></div>
                 <div><label">Age: <input type="text" name="age"></label></div>
                 <input type="submit" value="Submit">
