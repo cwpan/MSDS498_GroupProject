@@ -53,7 +53,7 @@ def form_predict():
             <head>
             <meta charset="UFT-8">
             <title> Prediction </title>
-            <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+            <link rel="stylesheet" href="static/css/style.css">
             </head> 
             <h1>The education is: {}</h1>
             <h1>The age is : {}</h1>
